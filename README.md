@@ -2,20 +2,14 @@
 
 ## Project Overview
 
-This project uses Natural Language Processing (NLP) and Machine Learning to automatically classify customer support tickets and predict their priority levels.
-
-The system analyzes ticket descriptions, categorizes them into ticket types, and predicts whether a ticket should be assigned High, Medium, or Low priority. This helps support teams reduce manual effort and improve response efficiency.
-
----
+This project uses Natural Language Processing (NLP) and Machine Learning techniques to automatically classify customer support tickets and predict their priority levels. The goal is to reduce manual effort in support operations and improve ticket routing efficiency.
 
 ## Objectives
 
-- Automatically classify support tickets into categories.
-- Predict ticket priority levels.
-- Reduce manual ticket sorting effort.
-- Improve support team productivity.
-
----
+- Categorize support tickets into different ticket types.
+- Predict ticket priority levels (Critical, High, Medium, Low).
+- Automate support ticket management.
+- Improve operational efficiency through NLP.
 
 ## Technologies Used
 
@@ -25,149 +19,100 @@ The system analyzes ticket descriptions, categorizes them into ticket types, and
 - NLTK
 - Scikit-Learn
 - TF-IDF Vectorization
-- Bag of Words (Count Vectorizer)
+- Bag of Words
 - Logistic Regression
 - Matplotlib
 - Google Colab
 
----
-
 ## Dataset
 
-Customer Support Ticket Dataset (Kaggle)
+Customer Support Ticket Dataset
 
-The dataset contains customer support ticket information including:
+The dataset contains customer support ticket descriptions along with ticket categories and priority labels.
 
-- Ticket Description
-- Ticket Type
-- Ticket Priority
-- Customer Information
-- Resolution Details
+## Workflow
 
----
+## 1. Data Loading
 
-## Project Workflow
+Loaded and explored the support ticket dataset.
 
-1. Data Loading
-
-The dataset is loaded from a CSV file into a Pandas DataFrame.
-
-2. Text Preprocessing
-
-Text cleaning includes:
+## 2. Text Preprocessing
 
 - Lowercasing
-- Stopword Removal
-- Punctuation Removal
-- Special Character Removal
+- Punctuation removal
+- Stopword removal
+- Text cleaning
 
-3. Feature Extraction
+## 3. Feature Extraction
 
-Two NLP feature extraction techniques were implemented:
+- TF-IDF Vectorization
+- Bag of Words Representation
 
-TF-IDF Vectorization
+## 4. Ticket Category Classification
 
-Converts ticket descriptions into weighted numerical features.
+Built a Logistic Regression model to classify support tickets into categories such as:
 
-Bag of Words
-
-Converts text into word-frequency vectors.
-
-4. Ticket Category Classification
-
-A Logistic Regression model is trained using ticket descriptions to predict ticket categories such as:
-
-- Technical Issue
 - Billing Inquiry
-- Product Inquiry
 - Cancellation Request
+- Product Inquiry
 - Refund Request
+- Technical Issue
 
-5. Priority Prediction
+## 5. Priority Prediction
 
-A separate Logistic Regression model predicts:
+Built a separate Logistic Regression model to predict ticket priority:
 
-- High Priority
-- Medium Priority
-- Low Priority
+- Critical
+- High
+- Medium
+- Low
 
-based on ticket descriptions.
+## 6. Model Evaluation
 
-6. Model Evaluation
+Evaluated models using:
 
-The models are evaluated using:
-
-- Accuracy
+- Accuracy Score
 - Precision
 - Recall
-- F1-Score
+- F1 Score
 - Confusion Matrix
-- Classification Report
-
----
 
 ## Results
 
-Ticket Category Classification
+## Ticket Category Classification
 
-The model predicts the category of a customer support ticket using ticket description text.
-
-Metrics Used:
-
-- Accuracy
-- Precision
-- Recall
-- F1-Score
+- Accuracy: 19.83%
 
 ## Priority Prediction
 
-The model predicts the priority level of incoming support tickets.
-
-## Metrics Used:
-
-- Accuracy
-- Precision
-- Recall
-- F1-Score
-
----
+- Accuracy: 26.98%
 
 ## Sample Prediction
 
-Input
-
+Input:
 Customer cannot login and access account
 
-Output
+Output:
 
-Category: Cancellation Request
-
-Priority: High
-
----
+- Category: Cancellation Request
+- Priority: High
 
 ## Business Impact
 
-This solution can help organizations:
-
-- Automate ticket routing
-- Prioritize urgent customer issues
-- Reduce manual support workload
-- Improve response times
-- Enhance customer satisfaction
-
----
+- Faster ticket routing
+- Automated prioritization
+- Reduced manual workload
+- Improved customer support efficiency
+- Better resource allocation
 
 ## Future Improvements
 
-- Use advanced NLP models such as BERT
+- Implement advanced NLP models such as BERT
 - Hyperparameter tuning
+- Better feature engineering
 - Larger and more diverse datasets
-- Real-time ticket prediction API
-- Deep Learning-based text classification
-
----
+- Deep Learning based text classification
 
 ## Conclusion
 
-This project demonstrates how Natural Language Processing can be applied to real-world customer support operations. By combining text preprocessing, feature extraction, classification, and priority prediction, the system helps streamline support workflows and improve operational efficiency.
+This project demonstrates how NLP and Machine Learning can be applied to automate support ticket management by classifying ticket categories and predicting priority levels. Such systems can help organizations streamline customer support operations and improve response efficiency.
