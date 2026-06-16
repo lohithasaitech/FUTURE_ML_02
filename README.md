@@ -38,7 +38,7 @@ Ticket Type Classification
 
 - Accuracy: 18.83%
 
-Priority Prediction
+## Priority Prediction
 
 - Accuracy: 25.91%
 
