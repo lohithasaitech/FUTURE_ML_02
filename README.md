@@ -1,16 +1,16 @@
-Support Ticket Classification and Priority Prediction using NLP
+## Support Ticket Classification and Priority Prediction using NLP
 
-Project Overview
+## Project Overview
 
 This project uses Natural Language Processing (NLP) to automatically classify customer support tickets and predict their priority levels.
 
-Objectives
+## Objectives
 
 - Categorize support tickets into different ticket types.
 - Predict ticket priority (High, Medium, Low).
 - Reduce manual effort in support operations.
 
-Technologies Used
+## Technologies Used
 
 - Python
 - Pandas
@@ -19,11 +19,11 @@ Technologies Used
 - Logistic Regression
 - Google Colab
 
-Dataset
+## Dataset
 
 Customer Support Ticket Dataset from Kaggle.
 
-Workflow
+## Workflow
 
 1. Data Loading
 2. Text Preprocessing
@@ -32,7 +32,7 @@ Workflow
 5. Priority Prediction
 6. Model Evaluation
 
-Results
+## Results
 
 Ticket Type Classification
 
@@ -42,24 +42,24 @@ Priority Prediction
 
 - Accuracy: 25.91%
 
-Sample Prediction
+## Sample Prediction
 
 Input:
 Customer cannot login and access account
 
-Output:
+## Output:
 
 - Category: Cancellation request
 - Priority: High
 
-Business Impact
+## Business Impact
 
 - Faster ticket routing
 - Automated prioritization
 - Reduced manual workload
 - Improved support efficiency
 
-Future Improvements
+## Future Improvements
 
 - Use advanced NLP models such as BERT
 - Improve feature engineering
